@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://nlmbvqc3t0yj"]
+
+[ext_resource type="Script" uid="uid://rir1culjbjmv" path="res://scenes/mob.gd" id="1_bsing"]
+[ext_resource type="Texture2D" uid="uid://bv4agqady6n31" path="res://art/enemigo.png" id="2_bsing"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d4cuo"]
+
+[node name="mob" type="Area2D"]
+script = ExtResource("1_bsing")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_bsing")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_d4cuo")
